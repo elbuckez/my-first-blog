@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+#Whenever you make changes here we need to migrate using python manage.py makemigration
 
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
